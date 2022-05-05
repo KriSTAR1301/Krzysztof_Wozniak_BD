@@ -1,0 +1,26 @@
+Zad.1
+Id_produktu -> nazwa_produktu, id_klienta, nazwa_klienta, 
+data_zamowienia, cena_produktu, ilość, VAT, suma_brutto, suma_netto
+nazwa_produktu ->  cena_produktu, ilość, VAT, suma_brutto, suma_netto
+id_klienta -> nazwa_klienta, data_zamowienia, ilość
+nazwa_klienta -> id_klienta, data_zamowienia, ilość
+data_zamowienia -> id_klienta, nazwa_klienta, ilość
+cena_produktu -> suma_brutto, VAT, suma_netto
+suma_brutto -> suma_netto, VAT
+
+Zad.2
+Id_produktu
+nazwa_produktu
+nazwa_klienta
+id_klienta
+
+
+Zad.3
+id_pomieszczenia ->  numer_pomieszczenia, id_budynku, 
+powierzchnia, liczba_okien, liczba_drzwi, ulica, miasto, kod_pocztowy
+id_budynku ->  ulica, miasto, kod_pocztowy
+kod_pocztowy -> miasto
+
+Klucze kandydujące:
+id_pomieszczenia
+id_budynku
